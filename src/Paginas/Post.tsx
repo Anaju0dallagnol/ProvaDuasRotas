@@ -1,4 +1,4 @@
-import { Box, Card } from "@mui/material";
+import {Box} from "@mui/material";
 import Lista from '../Componentes/Lista'
 import Titulo from '../Componentes/Titulo'
 
