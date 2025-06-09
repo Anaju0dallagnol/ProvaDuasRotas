@@ -40,9 +40,12 @@ export default function PageDados() {
   }
 
   return (
-  
-    <Box p={4}>
+  <div>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, alignContent: 'center', alignItems: 'center', height: '100vh', justifyContent: 'center',
+        width: '100%' }}>
+    
          <Card titulo={post.title} textoMeio={post.body} postID={post.userId}></Card>
     </Box>
+    </div>
   );
 }

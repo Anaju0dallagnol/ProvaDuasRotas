@@ -21,7 +21,7 @@ interface CardProps {
 
         <CardMedia
           sx={{ height: 140 }}
-          image="https://img.freepik.com/photos-gratuite/vue-du-cameleon-couleurs-neons-vives_23-2151682767.jpg?semt=ais_hybrid&w=740"
+          image="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/hello-kitt-perfil.jpg"
 
         />
         <CardContent>
