@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Typography, Box } from '@mui/material';
+import Card from '../Componentes/Card'
+
 
 // Tipo dos dados recebidos da API
 interface PostaDados {
@@ -38,16 +40,9 @@ export default function PageDados() {
   }
 
   return (
+  
     <Box p={4}>
-      <Typography variant="h4" gutterBottom>
-        {post.title}
-      </Typography>
-      <Typography variant="body1">
-        {post.body}
-      </Typography>
-      <Typography variant="caption" display="block" mt={2}>
-        Usuário: {post.userId}
-      </Typography>
+         <Card titulo={post.title} textoMeio={post.body} postID={post.userId}></Card>
     </Box>
   );
 }

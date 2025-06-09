@@ -1,15 +1,14 @@
 import { Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 
-interface ButtonsProps {
+interface CardProps {
 
     titulo:String
     textoMeio:String;
     postID:any;
-    postUserID: any;
 
   }
   
-  export default function ComponentButton({titulo,textoMeio,postID,postUserID }: ButtonsProps) {
+  export default function ComponentButton({titulo,textoMeio,postID}: CardProps) {
     return (
       <div>
         
@@ -35,7 +34,6 @@ interface ButtonsProps {
         </CardContent>
         <CardActions>
         <Typography variant="subtitle2">Post ID: {postID}</Typography>
-        <Typography variant="subtitle2">User ID: {postUserID}</Typography>
         </CardActions>
       </Card>
       </div>
