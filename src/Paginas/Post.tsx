@@ -1,6 +1,6 @@
 import { Box, Card } from "@mui/material";
 import Lista from '../Componentes/Lista'
-
+import Titulo from '../Componentes/Titulo'
 
 export default function PagePost() {
     return (
@@ -9,8 +9,8 @@ export default function PagePost() {
 
 
 
-
-                    <Lista></Lista>
+                <Titulo texto={"Lista dos Posts"}></Titulo>
+                <Lista></Lista>
 
 
             </Box>
