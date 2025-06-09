@@ -20,6 +20,7 @@ export default function NestedList() {
   };
 
   return (
+    <div>
     <List
       sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
       component="nav"
@@ -60,5 +61,6 @@ export default function NestedList() {
         </List>
       </Collapse>
     </List>
+    </div>
   );
 }
