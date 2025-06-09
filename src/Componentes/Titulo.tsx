@@ -9,7 +9,7 @@ interface TituloProps {
 export default function ComponentTitulo ({ texto }: TituloProps) {
   return (
     <div>
-        <Typography variant="h3">{texto}</Typography>
+        <Typography variant="h3" color="white">{texto}</Typography>
    </div>
 
   );
