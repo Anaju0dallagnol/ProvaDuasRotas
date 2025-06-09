@@ -11,7 +11,7 @@ interface ButtonsProps {
   export default function ComponentButton({onClick, texto }: ButtonsProps) {
     return (
       
-      <Button sx={{background:"#F9C80E",textTransform: "none",color:"black"}} variant="contained" onClick={onClick}>{texto}</Button>
+      <Button sx={{background:"#C8F3F5",textTransform: "none",color:"black"}} variant="contained" onClick={onClick}>{texto}</Button>
   
     );
   }
