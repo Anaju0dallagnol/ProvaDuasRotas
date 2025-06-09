@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Typography, Box, CircularProgress } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 
 // Tipo dos dados recebidos da API
 interface PostaDados {
@@ -13,7 +13,7 @@ interface PostaDados {
 export default function PageDados() {
   const { id } = useParams<{ id: string }>();
   const [post, setPost] = useState<PostaDados | null>(null);
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     if (id) {
@@ -21,11 +21,9 @@ export default function PageDados() {
         .then((res) => res.json())
         .then((data: PostaDados) => {
           setPost(data);
-          setLoading(false);
         })
         .catch((err) => {
           console.error('Erro ao buscar dados:', err);
-          setLoading(false);
         });
     }
   }, [id]);
